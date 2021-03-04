@@ -111,7 +111,7 @@
   border-radius: 5px;
   background-color: #9946f7;
   color: #f1e4ff;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
   padding: 5px 10px;
 }
@@ -127,7 +127,7 @@
   border-radius: 5px;
   background-color: #f1e4ff;
   color: #9946f7;
-  font-size: 8px;
+  font-size: 12px;
   font-weight: bold;
   padding: 5px 10px;
 }
@@ -172,6 +172,7 @@
     text-decoration: none;
     color: black;
     display: block;
+    font-size: 17px;
   }
   .menu__link:hover {
     font-weight: bold;
@@ -181,7 +182,10 @@
     display: none;
   }
   .buttons__login, .buttons__sign-up {
-    font-size: 0.6875rem;
+    font-size: 0.9rem;
+  }
+  .logo {
+    transform: scale(1) translateX(-19.5px);
   }
   .logo__img {
     margin-right: 200px;
