@@ -19,5 +19,5 @@ The project was developed mobile firts and then worked with the following media 
 @media only screen and (min-width: 1200px)
 
 The URL of the project is as follows:
-https://html-css-training-1.herokuapp.com/
+https://bootcamptest-tatiana.netlify.app/
 
