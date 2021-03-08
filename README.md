@@ -10,7 +10,7 @@ The code was worked with the BEM structure and the styling was done with SASS a 
 
 The SVG of the images was optimized with the following website: https://jakearchibald.github.io/svgomg/
 
-The project was developed mobile firts and then worked with the following media queries:
+The project was developed mobile first and then worked with the following media queries:
 
 - For Ipad:
 @media only screen and (min-width: 768px)
