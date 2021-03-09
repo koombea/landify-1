@@ -7,3 +7,16 @@
 .container {
   width: 65rem;
 }
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .mobile-off {
+    display: none;
+  }
+  .header {
+    position: fixed;
+    background: white;
+  }
+  .section-1 {
+    padding-top: 26%;
+  }
+}
