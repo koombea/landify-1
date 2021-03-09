@@ -1,9 +1,9 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Manrope, sans-serif';
+  font-family: 'Manrope', sans-serif;
 }
 
 .container {
-  width: 1066px;
+  width: 65rem;
 }
