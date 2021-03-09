@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .container {
@@ -21,6 +22,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header--active .header {
+  position: fixed;
 }
 
 .header--active .menu {
@@ -35,16 +40,19 @@
   font-size: 14px;
   cursor: pointer;
   background-color: white;
+  top: 0;
+  position: fixed;
 }
 
 .header--active .menu__list {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 41%;
   width: 100%;
-  height: fit-content;
+  height: 50vh;
   text-align: center;
+  align-content: center;
 }
 
 .header--active .menu__link {
@@ -117,6 +125,7 @@
   justify-content: center;
   margin-left: 20px;
   align-items: center;
+  z-index: 9;
 }
 
 .burger__button {
@@ -288,7 +297,6 @@
 
 .section-1 {
   margin: 0 auto;
-  margin-top: 20px;
   width: 100%;
   max-width: 80%;
   height: auto;
@@ -355,8 +363,7 @@
 
 @media only screen and (min-width: 1200px) {
   .section-1 {
-    margin: 0px 0px;
-    margin-top: 10px;
+    margin: 0px;
     width: 100%;
     max-width: 100%;
     height: 794px;
