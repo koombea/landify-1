@@ -7,11 +7,14 @@
   <title>Landify</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header class="header js-header">
-    <div class="header__container">
+    <div class="container">
       <div class="burger">
         <div class="burger__button js-burger-button"></div>
       </div>
@@ -20,6 +23,10 @@
           <li class="menu__item"><a class="menu__link" href="#">About</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          <div class="menu__buttons">
+            <a class="btn" href="#">Login</a>
+            <a class="btn btn--primary" href="#">Sign up</a>
+          </div> 
         </ul>
       </nav>
       <div class="logo">
@@ -32,11 +39,12 @@
         </svg>
       </div>
       <div class="buttons">
-        <button class="buttons__login buttons__login--active">Login</button>
-        <button class="buttons__sign-up buttons__sign-up--active">Sign up</button>
+        <a class="btn" href="#">Login</a>
+        <a class="btn btn--primary" href="#">Sign up</a>
       </div> 
     </div>
   </header>
+
   <script src="./js/index.js"></script>
 </body>
 </html>
