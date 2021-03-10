@@ -8,6 +8,10 @@
   width: 65rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 @media (max-width: 480px) and (min-width: 320px) {
   .mobile-off {
