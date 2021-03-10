@@ -1,100 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landify</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <header class="header js-header">
-    <div class="container">
-      <div class="burger">
-        <div class="burger__button js-burger-button"></div>
-      </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Pricing</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-          <div class="menu__buttons">
-            <a class="btn" href="#">Login</a>
-            <a class="btn btn--primary" href="#">Sign up</a>
-          </div> 
-        </ul>
-      </nav>
-      <div class="logo">
-        <svg class="logo__img" width="105" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M.575 28h9.493a8.15 8.15 0 008.151-8.15H8.726A8.15 8.15 0 00.576 28z" fill="#F22BB2"/>
-          <path d="M1 8.15v11.987a8.15 8.15 0 008.15-8.15V0A8.15 8.15 0 001 8.15z" fill="#8C30F5"/>
-          <path d="M27.425 0H17.93a8.15 8.15 0 00-8.15 8.15h9.493A8.15 8.15 0 0027.424 0z" fill="#FE9A22"/>
-          <path d="M27.425 19.37V7.384a8.15 8.15 0 00-8.151 8.15v11.987a8.15 8.15 0 008.15-8.151z" fill="#2EC5CE"/>
-          <path class="logo__title" d="M40.4 17.92V7h-3.2v14h8.2v-3.08h-5zM53.872 11v.94c-.66-.76-1.64-1.22-2.98-1.22-2.62 0-4.78 2.3-4.78 5.28 0 2.98 2.16 5.28 4.78 5.28 1.34 0 2.32-.46 2.98-1.22V21h3V11h-3zm-2.38 7.44c-1.38 0-2.38-.94-2.38-2.44s1-2.44 2.38-2.44 2.38.94 2.38 2.44-1 2.44-2.38 2.44zM64.933 10.72c-1.32 0-2.32.48-2.86 1.22V11h-3v10h3v-5.46c0-1.42.76-2.06 1.86-2.06.96 0 1.74.58 1.74 1.82V21h3v-6.14c0-2.7-1.72-4.14-3.74-4.14zM77.993 7v4.94c-.66-.76-1.64-1.22-2.98-1.22-2.62 0-4.78 2.3-4.78 5.28 0 2.98 2.16 5.28 4.78 5.28 1.34 0 2.32-.46 2.98-1.22V21h3V7h-3zm-2.38 11.44c-1.38 0-2.38-.94-2.38-2.44s1-2.44 2.38-2.44 2.38.94 2.38 2.44-1 2.44-2.38 2.44zM84.694 10.12c.98 0 1.8-.82 1.8-1.8 0-.98-.82-1.8-1.8-1.8-.98 0-1.8.82-1.8 1.8 0 .98.82 1.8 1.8 1.8zM83.194 21h3V11h-3v10zM93.89 9.6V6.72c-3.32-.2-4.86 1.48-4.86 4.28h-1.34v2.88h1.34V21h3v-7.12h1.86V11h-1.86c0-1.16.74-1.5 1.86-1.4zM101.681 11l-1.88 6.12-2.22-6.12h-3.3l3.98 9.54c-.44 1.22-1.1 1.66-2.5 1.66V25c2.8.14 4.58-1.12 5.7-4.3l3.42-9.7h-3.2z" fill="#0B0D17"/>
-        </svg>
-      </div>
-      <div class="buttons">
-        <a class="btn" href="#">Login</a>
-        <a class="btn btn--primary" href="#">Sign up</a>
-      </div> 
-    </div>
-  </header>
-  
-  <section class="section-1">
-    <div class="box2">
-      <img class="box2__img mobile-off" src="./assets/creative-block.svg" alt="">
-    </div>
-    <div class="box1">
-      <h1 class="box1__title">Landing page UI kit</h1>
-      <p class="box1__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.</p>
-      <div class="boton">
-       <a class="btn--primary btn-home" href="#" >Get Started</a>
-      </div>
-    </div> 
-  </section>
-
-  <section class="section-2">
-    <div class="section-2__container">
-      <div class="section-2__box2">
-        <img class="section-2__img" src="./assets/circle-logo.svg" alt="Circle logo">
-      </div>
-      <div class="section-2__box1">
-        <h2 class="section-2__title">Get deals from 100+ companies</h2>
-        <p class="section-2__text">Subscribe to our application and get deals from top notch companies in the world every month. Be an exclusive member of the team.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-3">
-    <div class="section-3__container">
-      <h2 class ="section-3__title">Discover the key features</h2>
-      <div class="boxes">
-        <div class="box-left">
-          <img class="box-left__img" src="./assets/multiple-links.svg" alt="Multiple links">
-          <p class="box-left__text">Add multiple links in Instagram instead of just one.</p>
-          <a class="boxes__link" href="#">Know more<span class="boxes__arrow"></span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landify</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header js-header">
+      <div class="container">
+        <div class="burger">
+          <div class="burger__button js-burger-button"></div>
         </div>
-        <div class="box-center">
-          <img class="box-center__img" src="./assets/online-messaging.svg" alt="Online Messaging">
-          <p class="box-center__text">Allow your clients to connect with you with one click.</p>
-          <a class="boxes__link" href="#">Know more<span class="boxes__arrow"></span></a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+            <div class="menu__buttons">
+              <a class="btn" href="#">Login</a>
+              <a class="btn btn--primary" href="#">Sign up</a>
+            </div>
+          </ul>
+        </nav>
+        <div class="logo">
+          <svg
+            class="logo__img"
+            width="105"
+            height="28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M.575 28h9.493a8.15 8.15 0 008.151-8.15H8.726A8.15 8.15 0 00.576 28z"
+              fill="#F22BB2"
+            />
+            <path
+              d="M1 8.15v11.987a8.15 8.15 0 008.15-8.15V0A8.15 8.15 0 001 8.15z"
+              fill="#8C30F5"
+            />
+            <path
+              d="M27.425 0H17.93a8.15 8.15 0 00-8.15 8.15h9.493A8.15 8.15 0 0027.424 0z"
+              fill="#FE9A22"
+            />
+            <path
+              d="M27.425 19.37V7.384a8.15 8.15 0 00-8.151 8.15v11.987a8.15 8.15 0 008.15-8.151z"
+              fill="#2EC5CE"
+            />
+            <path
+              class="logo__title"
+              d="M40.4 17.92V7h-3.2v14h8.2v-3.08h-5zM53.872 11v.94c-.66-.76-1.64-1.22-2.98-1.22-2.62 0-4.78 2.3-4.78 5.28 0 2.98 2.16 5.28 4.78 5.28 1.34 0 2.32-.46 2.98-1.22V21h3V11h-3zm-2.38 7.44c-1.38 0-2.38-.94-2.38-2.44s1-2.44 2.38-2.44 2.38.94 2.38 2.44-1 2.44-2.38 2.44zM64.933 10.72c-1.32 0-2.32.48-2.86 1.22V11h-3v10h3v-5.46c0-1.42.76-2.06 1.86-2.06.96 0 1.74.58 1.74 1.82V21h3v-6.14c0-2.7-1.72-4.14-3.74-4.14zM77.993 7v4.94c-.66-.76-1.64-1.22-2.98-1.22-2.62 0-4.78 2.3-4.78 5.28 0 2.98 2.16 5.28 4.78 5.28 1.34 0 2.32-.46 2.98-1.22V21h3V7h-3zm-2.38 11.44c-1.38 0-2.38-.94-2.38-2.44s1-2.44 2.38-2.44 2.38.94 2.38 2.44-1 2.44-2.38 2.44zM84.694 10.12c.98 0 1.8-.82 1.8-1.8 0-.98-.82-1.8-1.8-1.8-.98 0-1.8.82-1.8 1.8 0 .98.82 1.8 1.8 1.8zM83.194 21h3V11h-3v10zM93.89 9.6V6.72c-3.32-.2-4.86 1.48-4.86 4.28h-1.34v2.88h1.34V21h3v-7.12h1.86V11h-1.86c0-1.16.74-1.5 1.86-1.4zM101.681 11l-1.88 6.12-2.22-6.12h-3.3l3.98 9.54c-.44 1.22-1.1 1.66-2.5 1.66V25c2.8.14 4.58-1.12 5.7-4.3l3.42-9.7h-3.2z"
+              fill="#0B0D17"
+            />
+          </svg>
         </div>
-        <div class="box-right">
-          <img class="box-right__img" src="./assets/app-forms.svg" alt="application Form">
-          <p class="box-right__text">Capture leads and grow your business with them.</p>
-          <a class="boxes__link" href="#">Know more<span class="boxes__arrow"></span></a>
+        <div class="buttons">
+          <a class="btn" href="#">Login</a>
+          <a class="btn btn--primary" href="#">Sign up</a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
+
+    <section class="section-1">
+      <div class="box2">
+        <img
+          class="box2__img mobile-off"
+          src="./assets/creative-block.svg"
+          alt=""
+        />
+      </div>
+      <div class="box1">
+        <h1 class="box1__title">Landing page UI kit</h1>
+        <p class="box1__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in
+          et, lectus sit lorem id integer.
+        </p>
+        <div class="boton">
+          <a class="btn--primary btn-home" href="#">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="section-2__container">
+        <div class="section-2__box2">
+          <img
+            class="section-2__img"
+            src="./assets/circle-logo.svg"
+            alt="Circle logo"
+          />
+        </div>
+        <div class="section-2__box1">
+          <h2 class="section-2__title">Get deals from 100+ companies</h2>
+          <p class="section-2__text">
+            Subscribe to our application and get deals from top notch companies
+            in the world every month. Be an exclusive member of the team.
+          </p>
+        </div>
+      </div>
+    </section>
 
 
+    
 
-  <script src="./js/index.js"></script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
