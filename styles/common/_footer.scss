@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.h4-title {
+.footer__title {
   color: white;
   font-style: normal;
   font-weight: 500;
@@ -103,9 +103,18 @@
   .footercol1 {
     margin-top: 1rem;
   }
-  .h4-title {
+  .footer__title {
     font-size: 18px;
   }
+
+  .footer-list {
+    align-items: flex-start;
+  }
+
+  .mobile-styles {
+    align-items: flex-start;
+  }
+
   .footer__link {
     font-size: 14px;
   }

@@ -1,8 +1,11 @@
 const burger = document.querySelector(".js-burger-button")
 const header = document.querySelector(".js-header")
 const stickyHeader = document.querySelector(".js-sticky")
+let textEditable = document.querySelectorAll(".js-edit")
+let saveButton = document.querySelector(".js-saveBtn")
 
 //function for burger button click
+
 burger.addEventListener('click', () => {
   header.classList.toggle("header--active");
 })
@@ -34,17 +37,34 @@ function headerResize() {
 
 window.addEventListener('resize',headerResize);
 
-//function for cmd k
 
-// document.addEventListener('keypress', logKey);
+//function for press ctrl k / cmd k :
 
-// function logKey(e) {
-//   console.log(` ${e.code}`);
-// }
-
-function detectspecialkeys(e){
+function presskeys(e){
   var evtobj=window.event? event : e
-  if (evtobj.altKey || evtobj.ctrlKey || evtobj.shiftKey ||  evtobj.cmdKey)
-      alert("you pressed one of the 'Alt', 'Ctrl', or 'Shift' keys")
+  if (evtobj.altKey == 75 || evtobj.ctrlKey == 75  || evtobj.shiftKey == 75 ||  evtobj.metaKey == 75 ) {
+    contentEdit(true);
+    toggleBtn(true);
+  }
 }
-document.onkeypress=detectspecialkeys
+
+document.onkeypress=presskeys
+
+// function for save toggle button:
+
+function toggleBtn(show) {
+  if (saveButton.style.display === "show") {
+    saveButton.style.display = "block";
+  } else {
+    saveButton.style.display = "none";
+  }
+}
+
+
+// function for selects the text to edit:
+
+function contentEdit() {
+  document.querySelectorAll('.js-edit').contentEditable = 'true'; 
+}
+
+
