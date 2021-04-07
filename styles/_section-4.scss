@@ -1,114 +1,75 @@
+
 .section-4 {
   background-color: $turquoise; 
-  padding: 0 20px;
-  &__container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-  }
-}
-
-.text {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  text-align: justify;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 10px 20px;
-  &--z-index {
-    z-index: 9;
-  }
-}
-
-.text-sign {
-  margin-left: 20px;
-  color: $turquoise-bold;
-}
-
-.text-charge {
-  margin-left: 20px;
-}
-
-.quotes {
-  width: 9%;
-  position: absolute;
-  left: 0;
-  top: -4px;
-  ::before {
-    content: '';
-    position: absolute;
-    top:5px;
-    z-index: -1; 
-  }
-}
-
-.client {
-  display: flex;
-  justify-content: center;
-  width:50%;
-}
-
-.ellipse {
-  display: flex;
-  justify-content: left;
-  margin: 10px 20px;
-}
-
-@media only screen and (min-width: 765px) {
-  .quotes {
-    width: 31px;
-    left: 6px;
-    top: 28px;
-  }
-  .section-4__container {
-    padding-top: 24px;
-  }
-
-  .text-sign {
-    margin-left: 19px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .section-4 {
+  &__parragraph {
     position: relative;
-    padding: 80px 0 0;
+  }
+  &__quotes {
+    width: 26px;
+    position: absolute;
+  }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  &__name {
+    color: $turquoise-bold; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__charge {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  &__right {
     display: flex;
+  }
+  &__img {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-4 {
     flex-direction: row;
-    justify-content: center;
-    &__container {
-      padding: 0px 20px;
-      width: 81%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    margin-top: 2rem;
+    &__text {
+      font-size: 18px;
+    }
+    &__quotes {
+      width: 50px;
+      top: 119rem;
+    }
+    &__name {
+      font-size: 18px;
+    }
+    &__charge {
+      font-size: 16px;
+    }
+    &__left {
+      width: 730px; 
+    }
+    &__sign {
+      margin-top: 4rem;
     }
   }
-  .section-4__left {
-    width: 57%;
-    position: relative;
-    padding-bottom: 70px;
+  .ellipse {
+    margin-top: 4rem;
   }
-  .quotes {
-    width: 22%;
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .section-4__right {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  .client {
-    width: 40%;
-  }
-
-
 }  
+
+@media only screen and (min-width: 1400px) {
+  .section-4__right {
+    margin-left: 3rem;
+  }
+}

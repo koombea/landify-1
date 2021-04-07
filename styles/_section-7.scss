@@ -1,0 +1,16 @@
+.section-7 {
+  display: flex;
+  margin-top: 1rem;
+  &__img {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-7 {
+    margin-top: 2rem;
+    &__img {
+      width: 100%;
+    }
+  }
+}

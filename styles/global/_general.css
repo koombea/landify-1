@@ -1,26 +1,48 @@
 * {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
   font-family: 'Manrope', sans-serif;
 }
 
 .container {
-  width: 65rem;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 1rem;
 }
 
-body {
-  overflow-x: hidden;
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
 }
 
 @media (max-width: 480px) and (min-width: 320px) {
   .mobile-off {
     display: none;
-  }
-  .header {
-    position: fixed;
-    background: white;
-  }
-  .section-1 {
-    padding-top: 26%;
   }
 }
