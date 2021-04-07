@@ -1,15 +1,21 @@
 
 .section-4 {
   background-color: $turquoise; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
   &__parragraph {
     position: relative;
+  }
+  &__figure {
+    display: flex;
   }
   &__quotes {
     width: 26px;
     position: absolute;
+    opacity: 0.5;
   }
   &__text {
     font-style: normal;
@@ -33,36 +39,54 @@
   }
   &__right {
     display: flex;
+    justify-content: center;
   }
   &__img {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .section-4 {
-    flex-direction: row;
-    margin-top: 2rem;
-    &__text {
-      font-size: 18px;
-    }
-    &__quotes {
-      width: 50px;
-      top: 119rem;
-    }
-    &__name {
-      font-size: 18px;
-    }
-    &__charge {
-      font-size: 16px;
-    }
-    &__left {
-      width: 730px; 
-    }
-    &__sign {
-      margin-top: 4rem;
-    }
+@media only screen and (min-width: 768px) {
+  .section-4__right {
+    flex-direction: column;
+    align-items: center;
   }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .section-4__flexbox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .section-4__quotes {
+    width: 71px;
+    margin-top: -2rem;
+    margin-left: -3rem;
+  }
+
+  .section-4__text {
+    font-size: 18px;
+  }
+
+  .section-4__name {
+    font-size: 18px;
+  }
+
+  .section-4__charge {
+      font-size: 16px;
+  }
+
+  .section-4__left {
+    width: 730px; 
+  }
+
+  .section-4__sign {
+    margin-top: 4rem;
+  }
+  
   .ellipse {
     margin-top: 4rem;
   }

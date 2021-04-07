@@ -1,8 +1,8 @@
 .footer {
   background-color: $black;
-  display: flex;
   flex-direction: column;
 }
+
 
 .mobile-styles {
   display: flex;
@@ -39,10 +39,6 @@
   margin-top: 1rem;
 }
 
-.foootercol2 {
-  margin-top: 1rem;
-}
-
 .footercol3 {
   margin-top: 1rem;
 }
@@ -52,11 +48,14 @@
   &__google {
     margin-top: 1rem;
   }
+  &__app {
+    margin-top: 1rem;
+  }
 }
 
 .footer__hr {
-  margin-top: 1rem;
-  border:0.1px solid white;
+  border:1px solid white;
+  opacity: 0.1;
 }
 
 .footer2 {
@@ -74,13 +73,20 @@
     justify-content: center;
     margin-top: 1rem
   }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   
   .footer1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .footer2 {
     display: flex;
@@ -89,24 +95,13 @@
     &__item {
       margin-left: 20px;
     }
-    &__media {
-      margin-right: 4.5rem;
-    }
-    &__copyright {
-      margin-left: 4.5rem;
+    &__text {
+      font-size: 14px;
     }
   }
+
   .footercol1 {
     margin-top: 1rem;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .footer2__media {
-    margin-right: 7rem;
-  }
-  .footer2__copyrigh {
-    margin-left: 7rem;
   }
   .h4-title {
     font-size: 18px;
@@ -114,4 +109,8 @@
   .footer__link {
     font-size: 14px;
   }
+  .footer1 {
+    margin-bottom: 2rem;
+  }
 }
+

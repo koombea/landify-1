@@ -36,8 +36,15 @@ window.addEventListener('resize',headerResize);
 
 //function for cmd k
 
-document.addEventListener('keypress', logKey);
+// document.addEventListener('keypress', logKey);
 
-function logKey(e) {
-  console.log(` ${e.code}`);
+// function logKey(e) {
+//   console.log(` ${e.code}`);
+// }
+
+function detectspecialkeys(e){
+  var evtobj=window.event? event : e
+  if (evtobj.altKey || evtobj.ctrlKey || evtobj.shiftKey ||  evtobj.cmdKey)
+      alert("you pressed one of the 'Alt', 'Ctrl', or 'Shift' keys")
 }
+document.onkeypress=detectspecialkeys
