@@ -2,7 +2,14 @@ const burger = document.querySelector(".js-burger-button")
 const header = document.querySelector(".js-header")
 const stickyHeader = document.querySelector(".js-sticky")
 let textEditable = document.querySelectorAll(".js-edit")
-let saveButton = document.querySelector(".js-saveBtn")
+let editButton = document.querySelector(".js-editBtn");
+toggleBtn(false);
+
+editButton.addEventListener('click', () => {
+  contentEdit(false);
+  toggleBtn(false);
+})
+
 
 //function for burger button click
 
@@ -38,33 +45,34 @@ function headerResize() {
 window.addEventListener('resize',headerResize);
 
 
+
 //function for press ctrl k / cmd k :
 
-function presskeys(e){
-  var evtobj=window.event? event : e
-  if (evtobj.altKey == 75 || evtobj.ctrlKey == 75  || evtobj.shiftKey == 75 ||  evtobj.metaKey == 75 ) {
-    contentEdit(true);
-    toggleBtn(true);
+document.addEventListener("keypress", function(e) {
+  if ((e.ctrlKey || e.metaKey) && (e.keyCode == 11 || e.keyCode == 75)) {
+    handleEditable(true);
+    toggleBtn(true)
   }
-}
+});
 
-document.onkeypress=presskeys
 
-// function for save toggle button:
+// function for hide and show toggle button:
 
 function toggleBtn(show) {
-  if (saveButton.style.display === "show") {
-    saveButton.style.display = "block";
+  if (show) {
+    editButton.style.display = "block";
   } else {
-    saveButton.style.display = "none";
+    editButton.style.display = "none";
   }
 }
 
 
 // function for selects the text to edit:
 
-function contentEdit() {
-  document.querySelectorAll('.js-edit').contentEditable = 'true'; 
+function handleEditable() {
+  document.querySelectorAll('.js-edit').forEach((ele) => {
+    ele.contentEditable = true;
+  })
 }
 
 
